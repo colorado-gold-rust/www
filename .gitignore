@@ -1,5 +1,6 @@
 # Build artifacts
 public/
+static/processed_images/
 
 # Tempfiles
 .DS_Store
