@@ -8,6 +8,7 @@ after_success: |
   [ $TRAVIS_BRANCH = master ] &&
   [ $TRAVIS_PULL_REQUEST = false ] &&
   zola build &&
+  cp CNAME public/ &&
   sudo pip install ghp-import &&
   ghp-import -n public &&
   git push -fq https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git gh-pages
