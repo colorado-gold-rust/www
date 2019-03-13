@@ -60,3 +60,20 @@ p.headline {
   margin: 0 auto;
   text-align: center;
 }
+
+div#social {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
+a.icon {
+  text-decoration: none;
+  display: block;
+  margin: 0 1em 0 1em;
+  padding: .5em;
+}
+
+img.icon {
+  width: 45px;
+}
