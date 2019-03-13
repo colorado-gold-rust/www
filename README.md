@@ -1,5 +1,8 @@
 # Colorado Gold Rust
 
+[![CI
+Status](https://api.travis-ci.org/colorado-gold-rust/www.svg?branch=master)](https://travis-ci.org/colorado-gold-rust/www)
+
 Rowdy Rust in the Wild West.
 
 ## Building the Site
