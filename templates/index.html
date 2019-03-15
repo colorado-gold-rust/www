@@ -4,23 +4,35 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Colorado Gold Rust</title>
+  <title>{% block title %}Colorado Gold Rust{% endblock title %}</title>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="{{ get_url(path="style.css") }}" rel="stylesheet">
 </head>
 <body>
   <header id="top">
-    <img class="flag" src="{{ resize_image(path="logo.png", width=300, op="fit_width") }}">
-    <h1>Colorado Gold Rust</h1>
+    <a href="{{ config.base_url }}">
+      <img class="flag" src="{{ resize_image(path="logo.png", width=300, op="fit_width") }}">
+      <h1>{{ config.title }}</h1>
+    </a>
   </header>
-  <p class="headline">Join us in Denver, Colorado on September 20-21, 2019, for two days of Rowdy Rust in the Wild West.</p>
-  <div id="social">
-    <a href="https://twitter.com/COGoldRust" class="icon">
-      <img src="{{ get_url(path="twitter.svg") }}" class="icon" alt="Twitter for Colorado Gold Rust">
-    </a>
-    <a href="mailto:coloradogoldrust@gmail.com" class="icon">
-      <img src="{{ get_url(path="email.svg") }}" class="icon" alt="Email Colorado Gold Rust">
-    </a>
+  <div class="content">
+    {% block content %}
+    <p class="headline">Join us in Denver, Colorado on September 20-21, 2019, for two days of Rowdy Rust in the Wild West.</p>
+    <div id="social">
+      <a href="https://twitter.com/{{ config.extra.twitter }}" class="icon">
+        <img src="{{ get_url(path="twitter.svg") }}" class="icon" alt="Twitter for {{ config.title }}">
+      </a>
+      <a href="mailto:{{ config.extra.email }}" class="icon">
+        <img src="{{ get_url(path="email.svg") }}" class="icon" alt="Email {{ config.title }}">
+      </a>
+    </div>
+    {% endblock content %}
   </div>
+  <footer>
+    {% block footer %}
+      <p class="copyright">
+        &copy; {{ config.extra.copyright }}
+      </p>
+    {% endblock footer %}
 </body>
 </html>

@@ -33,6 +33,11 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+
 header#top {
   width: 90%;
   max-width: 1440px;
@@ -48,10 +53,30 @@ header#top img.flag {
   box-shadow: 3px 3px 30px 5px rgba(0, 0, 0, .2);
 }
 
-header#top h1 {
+header#top h1, header#top h2 {
   margin-top: 1.5em;
-  font-size: 2.5em;
   text-align: center;
+}
+
+header#top h1 {
+  font-size: 2.5em;
+}
+
+header#top a {
+  text-decoration: none;
+  outline: none;
+}
+
+div.content {
+  max-width: 960px;
+  width: 90%;
+  margin: 0 auto 5em auto;
+}
+
+div.content h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 1em;
 }
 
 p.headline {
@@ -76,4 +101,40 @@ a.icon {
 
 img.icon {
   width: 45px;
+}
+
+footer {
+  margin: 0 0;
+}
+
+footer h4 {
+  color: #FAFAFA;
+}
+
+footer div.list {
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0 0;
+  margin: 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 0 .5em;
+  padding-right: 1em;
+}
+
+footer ul li:last-child {
+  padding-right: none;
+}
+
+p.copyright {
+  margin: 2em auto 1em auto;
+  display: block;
+  font-size: .8em;
+  text-align: center;
 }
