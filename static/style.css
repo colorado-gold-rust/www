@@ -79,6 +79,32 @@ div.content h1 {
   margin-bottom: 1em;
 }
 
+div.content h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: .8em;
+}
+
+div.content p {
+  line-height: 1.7em;
+  margin-bottom: 1.5em;
+}
+
+div.content p.prelude {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+div.content p:last-child {
+  margin-bottom: 0;
+}
+
+div.paper {
+  padding: 2em 3em;
+  background: rgba(0, 0, 0, .04);
+  margin-bottom: 2.5em;
+}
+
 p.headline {
   font-size: 2em;
   max-width: 800px;

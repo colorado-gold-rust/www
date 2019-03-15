@@ -1,0 +1,35 @@
+{% extends "index.html" %}
+
+{% block title %}
+{{ page.title }} - {{ config.title }}
+{% endblock title %}
+
+{% block pagetitle %}
+<h1>{{ page.title }}</h1>
+{% endblock %}
+
+{% block content %}
+<p class="prelude">
+  One of the earliest sites in Colorado's Gold Rush history is the confluence of Cherry Creek and the South Platte River, where prospectors first began exploring for gold. On September 20th, Colorado will again make history by hosting the Rocky Mountain region's first Rust conference, nearby that site where precious metals were discovered not so long ago.
+</p>
+<h2 id="code-of-conduct">
+  Code of Conduct
+</h2>
+<div class="paper">
+  <p>
+    Colorado Gold Rust is intended to be an inclusive, welcoming, accessible conference for everyone. We do not tolerate harassment in any form. Anyone found to be violating these rules may be sanctioned or expelled from the conference or related activities at the discretion of the organizers.
+  </p>
+  <p>
+    Harassment includes disparaging or marginalizing comments related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, or religion; sexualized images or nicknames used in public spaces; deliberate intimidation; stalking; sustained disruption of talks or other group events; inappropriate physical contact; and unwanted sexual attention.
+  </p>
+  <p>
+    If you feel like you're being harassed while participating in conference events (or related spaces like chat rooms), please contact a member of the staff immediately.
+  </p>
+  <p>
+    Read through the <a href="https://www.rust-lang.org/conduct.html">Rust Community Guidelines</a> for a detailed overview of policies governing the greater Rust community. 
+  </p>
+  <p>
+    On-site conference staff will be identified by their name badges (and possibly other identifying apparel, which we will mention here). If you need help of any kind, <a href="mailto:{{ config.extra.email }}">reach out to a staff member via email</a>.
+  </p>
+</div>
+{% endblock content %}

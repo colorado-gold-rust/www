@@ -12,8 +12,10 @@
   <header id="top">
     <a href="{{ config.base_url }}">
       <img class="flag" src="{{ resize_image(path="logo.png", width=300, op="fit_width") }}">
-      <h1>{{ config.title }}</h1>
     </a>
+    {% block pagetitle %}
+    <h1>{{ config.title }}</h1>
+    {% endblock pagetitle %}
   </header>
   <div class="content">
     {% block content %}
@@ -30,6 +32,16 @@
   </div>
   <footer>
     {% block footer %}
+      <div class="list">
+        <ul>
+          {% set about = get_page(path="about.md") %}
+          <li>
+            <a href="{{ get_url(path=about.path, trailing_slash=true) }}">
+              {{ about.title }}
+            </a>
+          </li>
+        </ul>
+      </div>
       <p class="copyright">
         &copy; {{ config.extra.copyright }}
       </p>
