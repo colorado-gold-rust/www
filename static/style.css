@@ -133,11 +133,25 @@ ul.yearbook {
   list-style-type: none;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }
 
 ul.yearbook li {
   text-align: center;
   margin-right: 3em;
+}
+
+@media(max-width: 600px) {
+  ul.yearbook {
+    display: block;
+  }
+
+  ul.yearbook li {
+    display: block;
+    width: 100%;
+    margin-bottom: 2em;
+    margin-right: 0;
+  }
 }
 
 ul.yearbook li:last-child {
