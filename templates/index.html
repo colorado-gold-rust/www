@@ -7,6 +7,12 @@
   <title>{% block title %}Colorado Gold Rust{% endblock title %}</title>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="{{ get_url(path="style.css") }}" rel="stylesheet">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@COGoldRust">
+  <meta name="twitter:creator" content="@COGoldRust">
+  <meta name="twitter:title" content="Colorado Gold Rust">
+  <meta name="twitter:description" content="Rowdy Rust in the Wild West.">
+  <meta name="twitter:image" content="{{ resize_image(path="logo.png", width=400, op="fit_width") }}">
 </head>
 <body>
   <header id="top">
