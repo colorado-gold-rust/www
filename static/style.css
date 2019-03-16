@@ -129,6 +129,27 @@ img.icon {
   width: 45px;
 }
 
+ul.yearbook {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+ul.yearbook li {
+  text-align: center;
+  margin-right: 3em;
+}
+
+ul.yearbook li:last-child {
+  margin-right: 0;
+}
+
+img.portrait {
+  border-radius: 200px;
+  max-width: 200px;
+  margin-bottom: 1em;
+}
+
 footer {
   margin: 0 0;
 }
