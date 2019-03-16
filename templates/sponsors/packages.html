@@ -1,0 +1,106 @@
+{% extends "index.html" %}
+
+{% block title %}
+{{ page.title }} - {{ config.title }}
+{% endblock title %}
+
+{% block pagetitle %}
+<h1>{{ page.title }}</h1>
+{% endblock pagetitle %}
+
+{% block content %}
+<p class="prelude">
+  We're looking for like minded sponsors who believe in supporting quality education in the Rust community.
+</p>
+<div class="paper">
+  <div class="sponsor-packages" role="table" aria-label="Sponsor Packages">
+    <div class="table-header">
+      <div class="table-cell first"></div>
+      <div class="table-cell" role="columnheader">Gold</div>
+      <div class="table-cell" role="columnheader">Silver</div>
+      <div class="table-cell" role="columnheader">Bronze</div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell first"></div>
+      <div class="table-cell" role="cell">$5,000</div>
+      <div class="table-cell" role="cell">$3,000</div>
+      <div class="table-cell" role="cell">$1,500</div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell first" role="rowheader">Included Conference Passes</div>
+      <div class="table-cell" role="cell">4</div>
+      <div class="table-cell" role="cell">2</div>
+      <div class="table-cell" role="cell">0</div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell first" role="rowheader">Included Discount Passes (50%)</div>
+      <div class="table-cell" role="cell">2</div>
+      <div class="table-cell" role="cell">1</div>
+      <div class="table-cell" role="cell">0</div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell first" role="rowheader">Logo and blurb on website</div>
+      <div class="table-cell" role="cell">X</div>
+      <div class="table-cell" role="cell">X</div>
+      <div class="table-cell" role="cell">X</div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell first" role="rowheader">Logo included in on-site signage</div>
+      <div class="table-cell" role="cell">X</div>
+      <div class="table-cell" role="cell">X</div>
+      <div class="table-cell" role="cell"></div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell first" role="rowheader">Mention in pre-conference emails</div>
+      <div class="table-cell" role="cell">X</div>
+      <div class="table-cell" role="cell">X</div>
+      <div class="table-cell" role="cell"></div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell first" role="rowheader">Opportunity to distribute swag</div>
+      <div class="table-cell" role="cell">X</div>
+      <div class="table-cell" role="cell">X</div>
+      <div class="table-cell" role="cell"></div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell first" role="rowheader">Logo in video recordings</div>
+      <div class="table-cell" role="cell">X</div>
+      <div class="table-cell" role="cell"></div>
+      <div class="table-cell" role="cell"></div>
+    </div>
+  </div>
+</div>
+<p class="prelude padded">
+  Is your company looking to do something out of the ordinary? <a href="mailto: {{config.extra.email }}">Contact us about one-of-a-kind options</a>.
+</p>
+<h2>Additional Sponsorship Opportunities</h2>
+<div class="constrain">
+  <div class="sponsor">
+    <h3>Diversity Sponsor: $500</h3>
+    <p>
+      Step up and help Colorado Gold Rust offer scholarship tickets for underrepresented folks in tech. We'll put the funds towards tickets and travel for those who wouldn't be able to attend otherwise, and give you a shout out from the stage as the conference opens. 
+    </p>
+  </div>
+  <div class="sponsor">
+    <h3>Oxidation Day Sponsor: $1,000</h3>
+    <p>
+      This sponsorship helps Colorado Gold Rust provide awesome workshops available to conference-goers. Workshops include hands-on training that enable participants to sharpen their skills at writing practical Rust code.
+    </p>
+  </div>
+  <div class="sponsor">
+    <h3>Live Transcription Sponsor: $4,000</h3>
+    <p>
+      Live transcription of talks makes Colorado Gold Rust more accessible. Help make our event more inclusive, and we'll place your logo next to the transcription screen, where it's sure to be noticed.
+    </p>
+  </div>
+  <div class="sponsor">
+    <h3>Coffee and Drink Sponsor: $2,500</h3>
+    <p>
+      It's an unwritten rule that software development conferences require large amounts of caffeine. Help keep our attendees hydrated and energized, and we'll acknowledge your contribution with a persistent sign by the drink station.
+    <p>
+  </div>
+  <p class="prelude padded">
+    Please <a href="mailto:{{ config.extra.email }}">email to book any of the above options</a>. Additional sponsorships may be purchased separately or combined with above offers.
+  </p>
+</div>
+{% endblock content %}

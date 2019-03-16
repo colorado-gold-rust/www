@@ -95,6 +95,13 @@ div.content p.prelude {
   text-align: center;
 }
 
+div.content p.prelude.padded {
+  font-size: 1.2em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
 div.content p:last-child {
   margin-bottom: 0;
 }
@@ -198,4 +205,63 @@ p.copyright {
   display: block;
   font-size: .8em;
   text-align: center;
+}
+
+/* Sponsor Packages */
+div.sponsor-packages {
+  width: 100%;
+}
+
+div.table-row, div.table-header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 auto;
+  padding: .5em 1em .5em 1em;
+}
+
+div.table-row {
+  padding: 1em;
+}
+
+div.table-header {
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+div.table-cell.gold {
+}
+
+div.table-cell.silver {
+}
+
+div.table-cell.bronze {
+}
+
+div.table-cell {
+  text-align: center;
+}
+
+div.table-cell.first {
+  grid-column: 1 / span 2;
+  text-align: right;
+}
+
+div.constrain {
+  max-width: 750px;
+  margin: 3em auto 1.5em auto;
+}
+
+div.constrain h3 {
+  margin-bottom: 1em;
+  font-size: 1.4em;
+}
+
+div.constrain div.sponsor {
+  margin-bottom: 2.5em;
+}
+
+div.constrain div.sponsor:last-child {
+  margin-bottom: 0;
 }
