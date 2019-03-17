@@ -16,6 +16,26 @@
 </head>
 <body>
   <header id="top">
+    <nav class="main">
+      <ul>
+        {% if current_path != "" %}
+          <li>
+            <a href="{{ config.base_url }}">Home</a>
+          </li>
+        {% endif %}
+        {% set about = get_page(path="about.md") %}
+        {% set packages = get_page(path="sponsors/packages.md") %}
+        {% for link in [about, packages] %}
+        {% if current_path != link.path %}
+        <li>
+          <a href="{{ get_url(path=link.path, trailing_slash=true) }}">
+            {{ link.title }}
+          </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
     <a href="{{ config.base_url }}">
       <img class="flag" src="{{ resize_image(path="logo.png", width=300, op="fit_width") }}" alt="Colorado Gold Rust Logo">
     </a>
@@ -38,19 +58,26 @@
   </div>
   <footer>
     {% block footer %}
-      <div class="list">
+      <nav class="main">
         <ul>
+          {% if current_path != "" %}
+            <li>
+              <a href="{{ config.base_url }}">Home</a>
+            </li>
+          {% endif %}
           {% set about = get_page(path="about.md") %}
           {% set packages = get_page(path="sponsors/packages.md") %}
           {% for link in [about, packages] %}
+          {% if current_path != link.path %}
           <li>
             <a href="{{ get_url(path=link.path, trailing_slash=true) }}">
               {{ link.title }}
             </a>
           </li>
+          {% endif %}
           {% endfor %}
         </ul>
-      </div>
+      </nav>
       <p class="copyright">
         &copy; {{ config.extra.copyright }}
       </p>

@@ -62,7 +62,7 @@ header#top h1 {
   font-size: 2.5em;
 }
 
-header#top a {
+header#top h1 a, header#top h2 a {
   text-decoration: none;
   outline: none;
 }
@@ -179,25 +179,30 @@ footer h4 {
   color: #FAFAFA;
 }
 
-footer div.list {
+nav.main {
   text-align: center;
+  margin: 2em;
 }
 
-footer ul {
-  list-style-type: none;
+nav.main ul {
   padding: 0 0;
-  margin: 0 0;
+  list-style-type: none;
   display: flex;
   justify-content: center;
 }
 
-footer ul li {
+nav.main ul li {
   margin: 0 .5em;
   padding-right: 1em;
 }
 
-footer ul li:last-child {
-  padding-right: none;
+nav.main ul li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+nav.main ul li a {
+  text-decoration: underline;
 }
 
 p.copyright {
