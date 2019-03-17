@@ -41,11 +41,14 @@
       <div class="list">
         <ul>
           {% set about = get_page(path="about.md") %}
+          {% set packages = get_page(path="sponsors/packages.md") %}
+          {% for link in [about, packages] %}
           <li>
-            <a href="{{ get_url(path=about.path, trailing_slash=true) }}">
-              {{ about.title }}
+            <a href="{{ get_url(path=link.path, trailing_slash=true) }}">
+              {{ link.title }}
             </a>
           </li>
+          {% endfor %}
         </ul>
       </div>
       <p class="copyright">
