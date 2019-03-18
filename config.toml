@@ -16,4 +16,4 @@ build_search_index = false
 # Put all your custom variables here
 copyright = "2019 Colorado Gold Rust, LLC. Released under the Apache License, Version 2.0."
 email = "coloradogoldrust@gmail.com"
-twitter = "@COGoldRust"
+twitter = "COGoldRust"
