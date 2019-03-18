@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>{% block title %}Colorado Gold Rust{% endblock title %}</title>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1.1' />
+  <script src='https://js.tito.io/v1' async></script>
   <link href="{{ get_url(path="style.css") }}" rel="stylesheet">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@COGoldRust">
@@ -46,6 +48,8 @@
   <div class="content">
     {% block content %}
     <p class="headline">Join us in Denver, Colorado on September 20-21, 2019, for two days of Rowdy Rust in the Wild West.</p>
+    <tito-widget event="cogoldrust/2019"></tito-widget>
+    <p class="subnote">Tickets may be tranferred, but are not refundable.</p>
     <div id="social">
       <a href="https://twitter.com/{{ config.extra.twitter }}" class="icon">
         <img src="{{ get_url(path="twitter.svg") }}" class="icon" alt="Twitter for {{ config.title }}">

@@ -270,3 +270,8 @@ div.constrain div.sponsor {
 div.constrain div.sponsor:last-child {
   margin-bottom: 0;
 }
+
+p.subnote {
+  text-align: center;
+  font-size: .8em;
+}
