@@ -217,38 +217,38 @@ div.sponsor-packages {
   width: 100%;
 }
 
-div.table-row, div.table-header {
+div.sponsor-packages div.table-row, div.sponsor-packages div.table-header {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin: 0 auto;
   padding: .5em 1em .5em 1em;
 }
 
-div.table-row {
+div.sponsor-packages div.table-row {
   padding: 1em;
 }
 
-div.table-header {
+div.sponsor-packages div.table-header {
   text-transform: uppercase;
   font-weight: 800;
   text-align: center;
   font-size: 1.2em;
 }
 
-div.table-cell.gold {
+div.sponsor-packages div.table-cell.gold {
 }
 
-div.table-cell.silver {
+div.sponsor-packages div.table-cell.silver {
 }
 
-div.table-cell.bronze {
+div.sponsor-packages div.table-cell.bronze {
 }
 
-div.table-cell {
+div.sponsor-packages div.table-cell {
   text-align: center;
 }
 
-div.table-cell.first {
+div.sponsor-packages div.table-cell.first {
   grid-column: 1 / span 2;
   text-align: right;
 }
@@ -274,4 +274,19 @@ div.constrain div.sponsor:last-child {
 p.subnote {
   text-align: center;
   font-size: .8em;
+}
+
+div.timetable {
+  display: grid;
+  grid-template-areas: """
+  . week
+  time content
+  """;
+  grid-template-columns: 120px;
+  grid-template-rows: 60px;
+  width: 100%;
+}
+
+div.timetable div.table-header {
+  display: flex;
 }
