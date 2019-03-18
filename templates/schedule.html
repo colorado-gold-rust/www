@@ -1,0 +1,49 @@
+{% extends "index.html" %}
+
+{% block title %}
+{{ page.title }} - {{ config.title }}
+{% endblock title %}
+
+{% block pagetitle %}
+<h1>{{ page.title }}</h1>
+{% endblock pagetitle %}
+
+{% block content %}
+<h2>Friday</h2>
+<div class="paper">
+  <p class="prelude">We're still in the process of scheduling workshops. Please check back later.
+  </p>
+</div>
+<h2>Saturday</h2>
+<div class="paper">
+  <h3>9:00AM</h3>
+  <p>Venue opens, registration begins.</p>
+  <h3>9:30AM</h3>
+  <p>First talk begins</p>
+  <h3>10:00AM</h3>
+  <p>Second talk begins</p>
+  <h3>10:30AM</h3>
+  <p>BREAK</p>
+  <h3>11:00AM</h3>
+  <p>Third talk begins</p>
+  <h3>11:30</h3>
+  <p>Fourth talk begins</p>
+  <h3>12:00-2PM</h3>
+  <p>LUNCH</p>
+  <h3>2:00PM</h3>
+  <p>Fifth talk begins</h3>
+  <h3>2:30PM</h3>
+  <p>Sixth talk begins</h3>
+  <h3>3:00PM</h3>
+  <p>BREAK</p>
+  <h3>3:30PM</h3>
+  <p>Seventh talk begins</p>
+  <h3>4:00pm</h3>
+  <p>Eighth talk begins</p>
+  <h3>4:30pm</h3>
+  <p>Ninth talk begins</p>
+  <h3>5:00pm</h3>
+  <p>Wrap up announcements</p>
+</div>
+<p class="subnote">Please note the schedule may change as we approach conference dates.</p>
+{% endblock content %}
