@@ -159,6 +159,10 @@ ul.yearbook li {
     margin-bottom: 2em;
     margin-right: 0;
   }
+
+  ul.yearbook li:last-child {
+    margin-bottom: 0;
+  }
 }
 
 ul.yearbook li:last-child {
