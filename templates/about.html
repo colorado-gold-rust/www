@@ -19,14 +19,18 @@
   <ul class="yearbook">
     {% for org in page.extra.organizers %}
       <li>
+        {% if org[2] != "" %}
         <a href="{{ org[2] }}">
+        {% endif %}
           <img srcset="{{ resize_image(path=org[1], width=200, height=200, quality=80, op="fill") }} 1x 
                        {{ resize_image(path=org[1], width=400, height=400, quality=80, op="fill") }} 2x"
                src="{{ resize_image(path=org[1], width=400, height=400, quality=80, op="fill") }}"
                alt="Avatar for conference organizer {{ org[0] }}"
                class="portrait">
           <h3>{{ org[0] }}</h3>
+        {% if org[2] %}
         </a>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>
@@ -34,10 +38,26 @@
 <h2 id="program-committee">
   Our Incredible Program Committee
 </h2>
-<div class="paper">
-  <p class="prelude padded">
-    We're preparing to announce the program committee members. Please check back soon.
-  </p>
+<div class="paper program-committee">
+  <ul class="yearbook">
+    {% for org in page.extra.reviewers %}
+      <li>
+        {% if org[2] != "" %}
+        <a href="{{ org[2] }}">
+        {% endif %}
+          <img srcset="{{ resize_image(path=org[1], width=200, height=200, quality=80, op="fill") }} 1x 
+                       {{ resize_image(path=org[1], width=400, height=400, quality=80, op="fill") }} 2x"
+               src="{{ resize_image(path=org[1], width=400, height=400, quality=80, op="fill") }}"
+               alt="Avatar for program committee member {{ org[0] }}"
+               class="portrait">
+          <h3>{{ org[0] }}</h3>
+        {% if org[2] != "" %}
+        </a>
+        {% endif %}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
 <h2 id="code-of-conduct">
   Code of Conduct
