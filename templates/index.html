@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>{% block title %}Colorado Gold Rust{% endblock title %}</title>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <script src="https://static-assets.mapbox.com/gl-pricing/dist/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1.1' />
   <script src='https://js.tito.io/v1' async></script>
   <link href="{{ get_url(path="style.css") }}" rel="stylesheet">
@@ -31,6 +33,37 @@
     <p class="headline">Join us in Denver, Colorado on September 20-21, 2019, for two days of Rowdy Rust in the Wild West.</p>
     <tito-widget event="cogoldrust/2019"></tito-widget>
     <p class="subnote">Tickets may be transferred, but are not refundable.</p>
+    <h2 id="venue" class="subhead">
+      Venue Details
+    </h2>
+    <p class="prelude">
+      Tivoli Baerresen Ballroom<br/>
+      900 Auraria Pkwy, Denver, CO 80204
+    </p>
+    <div id="map" style="width: 100%; height: 300px;"></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoidXB0aW1ldmVudHVyZXMiLCJhIjoiY2p1dmVvOHl2MDB3dzQ0bWZxMGMwM3N3eSJ9.MxM8_8iRSufOW9yf5gapig';
+
+      var center = [-105.00588, 39.74502];
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: center,
+        zoom: 12 
+      });
+
+      new mapboxgl.Marker()
+        .setLngLat(center)
+        .addTo(map);
+    </script>
+    <h3>Accessibility Information</h3>
+    <p>
+      <a href="https://www.ahec.edu/files/general/Accessible-Parking-Guide.pdf">Entrance ramps are available on three sides of the building.</a> Accessible parking is located in the parking garage across the street. A map of gender inclusive bathrooms is <a href="https://www.ahec.edu/files/general/Gender-Inclusive_Map.pdf">located here</a>. There's a quiet lounge available, too.
+    </p>
+    <p>
+      Please contact <a href="mailto:{{ config.extra.email }}">the organizers</a> if you need an accommodation not listed above.
+    </p>
+    {% endblock content %}
     <div id="social">
       <a href="https://twitter.com/{{ config.extra.twitter }}" class="icon">
         <img src="{{ get_url(path="twitter.svg") }}" class="icon" alt="Twitter for {{ config.title }}">
@@ -39,7 +72,6 @@
         <img src="{{ get_url(path="email.svg") }}" class="icon" alt="Email {{ config.title }}">
       </a>
     </div>
-    {% endblock content %}
   </div>
   <footer>
     {% block footer %}

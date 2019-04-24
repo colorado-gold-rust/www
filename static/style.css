@@ -70,7 +70,7 @@ header#top h1 a, header#top h2 a {
 div.content {
   max-width: 960px;
   width: 90%;
-  margin: 0 auto 5em auto;
+  margin: 0 auto 2em auto;
 }
 
 div.content h1 {
@@ -82,6 +82,12 @@ div.content h1 {
 div.content h2 {
   text-align: center;
   font-size: 2em;
+  margin-bottom: .8em;
+}
+
+div.content h3 {
+  text-align: center;
+  font-size: 1.5em;
   margin-bottom: .8em;
 }
 
@@ -106,6 +112,10 @@ div.content p:last-child {
   margin-bottom: 0;
 }
 
+div#map {
+  margin-bottom: 1.5em;
+}
+
 div.paper {
   padding: 2em 3em;
   background: rgba(0, 0, 0, .04);
@@ -122,7 +132,7 @@ p.headline {
 div#social {
   display: flex;
   justify-content: center;
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 
 a.icon {
@@ -279,6 +289,8 @@ div.constrain h3 {
   font-size: 1.4em;
 }
 
+div.constrain
+
 div.constrain div.sponsor {
   margin-bottom: 2.5em;
 }
@@ -290,4 +302,8 @@ div.constrain div.sponsor:last-child {
 p.subnote {
   text-align: center;
   font-size: .8em;
+}
+
+h2.subhead {
+  margin-top: 1.5em;
 }
