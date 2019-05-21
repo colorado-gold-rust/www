@@ -10,8 +10,9 @@
     </li>
     {% set about = get_page(path="about.md") %}
     {% set schedule = get_page(path="schedule.md") %}
+    {% set sponsors = get_section(path="sponsors/_index.md") %}
     {% set packages = get_page(path="sponsors/packages.md") %}
-    {% for link in [about, schedule, packages] %}
+    {% for link in [about, schedule, sponsors, packages] %}
     {% if current_path != link.path %}
     <li>
       <a href="{{ get_url(path=link.path, trailing_slash=true) }}">

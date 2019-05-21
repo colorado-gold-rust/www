@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+
+{% block title %}
+{{ section.title }} - {{ config.title }}
+{% endblock title %}
+
+{% block pagetitle %}
+<h1>{{ section.title }}</h1>
+{% endblock pagetitle %}
+
+{% block content %}
+  {% include "sponsor-list.html" %}
+{% endblock content %}
