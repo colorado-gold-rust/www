@@ -1,4 +1,8 @@
 +++
 title = "Sponsors"
+template = "sponsors/index.html"
+[extra.sponsors]
+prize = [
+  ["Manning", "logos/manning.svg", "https://www.manning.com"],
+]
 +++
-No sponsor information is available at this time.

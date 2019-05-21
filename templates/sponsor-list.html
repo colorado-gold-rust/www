@@ -1,0 +1,10 @@
+{% set section = get_section(path="sponsors/_index.md") %}
+{% for sponsor in section.extra.sponsors.prize %}
+  <div class="constrain">
+    <h3>Prize Sponsors</h3>
+    <a href="{{ sponsor[2] }}">
+      <img src="{{ sponsor[1] }}"
+           alt="Logo for prize sponsor {{ sponsor[0] }}">
+    </a>
+  </div>
+{% endfor %}
