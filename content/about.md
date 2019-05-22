@@ -11,9 +11,9 @@ organizers = [
 reviewers = [
   ["Julien Fitzpatrick", "avatars/j-fitzpatrick.jpg",
   "http://julienfitzpatrick.com"],
-  ["Mai Kodama", "avatars/m-kodama.jpg", ""],
-  ["QuietMisdreavus", "avatars/q-misdreavus.png", ""],
-  ["Austin Guest", "avatars/a-guest.jpg", ""],
-  ["Stu Small", "avatars/s-small.jpg", ""],
+  ["Mai Kodama", "avatars/m-kodama.jpg", "https://twitter.com/maiRandomness"],
+  ["QuietMisdreavus", "avatars/q-misdreavus.png", "https://twitter.com/QuietMisdreavus"],
+  ["Austin Guest", "avatars/a-guest.jpg", "https://github.com/aguestuser"],
+  ["Stu Small", "avatars/s-small.jpg", "http://twitter.com/thestusmall"],
 ]
 +++
