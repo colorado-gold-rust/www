@@ -307,3 +307,8 @@ p.subnote {
 h2.subhead {
   margin-top: 1.5em;
 }
+
+div.slack {
+  max-width: 500px;
+  margin: 0 auto;
+}
