@@ -312,3 +312,11 @@ div.slack {
   max-width: 500px;
   margin: 0 auto;
 }
+
+div.sponsor-logos {
+  text-align: center;
+}
+
+div.sponsor-logos img {
+  margin: 1em;
+}
