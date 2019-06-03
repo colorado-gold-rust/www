@@ -1,4 +1,7 @@
-dist: bionic
+language: node_js
+sudo: true
+node_js:
+  - "11"
 
 env:
   - ZOLA_VERSION=0.7.0
