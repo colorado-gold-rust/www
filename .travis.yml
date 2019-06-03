@@ -4,7 +4,7 @@ node_js:
   - "11"
 
 env:
-  - ZOLA_VERSION=0.7.0 DEPLOY_URL=https://cogoldrust.com
+  - ZOLA_VERSION=0.5.1 DEPLOY_URL=https://cogoldrust.com
 
 before_script:
   - bash scripts/setup.sh
