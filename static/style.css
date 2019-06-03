@@ -320,3 +320,13 @@ div.sponsor-logos {
 div.sponsor-logos img {
   margin: 1em;
 }
+
+@media print {
+  .screen-only {
+    display: none;
+  }
+
+  .paper {
+    background: transparent;
+  }
+}
