@@ -4,3 +4,6 @@ static/processed_images/
 
 # Tempfiles
 .DS_Store
+
+# npm tempfiles
+node_modules/
