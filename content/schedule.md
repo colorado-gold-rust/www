@@ -1,4 +1,21 @@
 +++
 title = "Schedule"
 template = "schedule.html"
+
+[extra]
+rustbridge = [
+  ["Kenny Foner", "avatars/k-foner.jpg"],
+]
+
+[extra.workshops]
+am = [
+  ["Eliza Weisman", "avatars/e-weisman.jpg", "Getting Started with Tokio"],
+  ["Sunjay Varma", "avatars/s-varma.jpg", "Learn Game Development in Rust"],
+]
+pm = [
+  ["Sean Griffin", "avatars/s-griffin.jpg", """Shift Your Data into Gear: Working
+  with Diesel"""],
+  ["Katharina Fey", "avatars/k-fey.jpg", """Scratch Your Own Itch: Building
+  Developer Tools in Rust"""],
+]
 +++

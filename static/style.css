@@ -159,6 +159,19 @@ ul.yearbook li {
   padding: 1em;
 }
 
+ul.yearbook li h4 {
+  font-size: 1.3em;
+  margin: 1em auto;
+}
+
+h3.small {
+  font-size: 1.1em !important;
+  border-top: #999 1px solid;
+  border-bottom: #999 1px solid;
+  width: 100%;
+  padding: 1em 0;
+}
+
 @media(max-width: 600px) {
   ul.yearbook {
     display: block;
