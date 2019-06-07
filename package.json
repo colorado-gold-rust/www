@@ -1,10 +1,12 @@
 {
   "name": "@cogoldrust/www",
   "scripts": {
-    "generate-pdf": "node scripts/generate-pdf.js"
+    "generate-pdf": "node scripts/generate-pdf.js",
+    "deploy": "netlify deploy"
   },
   "devDependencies": {
     "http-server": "^0.11.1",
+    "netlify-cli": "^2.11.22",
     "puppeteer": "^1.17.0"
   }
 }
