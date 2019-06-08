@@ -11,8 +11,49 @@
 {% block content %}
 <h2>Friday</h2>
 <div class="paper">
-  <p class="prelude">We're still in the process of scheduling workshops. Please check back later.
-  </p>
+  <h3>Workshops</h3>
+  <h3>9:00AM - 12:00PM</h3>
+  <ul class="yearbook">
+    {% for org in page.extra.workshops.am %}
+      <li>
+        <img srcset="{{ resize_image(path=org[1], width=200, height=200, quality=80, op="fill") }} 1x 
+                     {{ resize_image(path=org[1], width=400, height=400, quality=80, op="fill") }} 2x"
+             src="{{ resize_image(path=org[1], width=400, height=400, quality=80, op="fill") }}"
+             alt="Avatar for conference presenter {{ org[0] }}"
+             class="portrait">
+        <h4>{{ org[0] }}</h4>
+        {{ org[2] | markdown }}
+      </li>
+    {% endfor %}
+  </ul>
+  <h3 class="small">Lunch Break (12:00PM - 2:00PM)</h3>
+  <h3>2:00PM - 5:00PM</h3>
+  <ul class="yearbook">
+    {% for org in page.extra.workshops.pm %}
+      <li>
+        <img srcset="{{ resize_image(path=org[1], width=200, height=200, quality=80, op="fill") }} 1x 
+                     {{ resize_image(path=org[1], width=400, height=400, quality=80, op="fill") }} 2x"
+             src="{{ resize_image(path=org[1], width=400, height=400, quality=80, op="fill") }}"
+             alt="Avatar for conference presenter {{ org[0] }}"
+             class="portrait">
+        <h4>{{ org[0] }}</h4>
+        {{ org[2] | markdown }}
+      </li>
+    {% endfor %}
+  </ul>
+  <h3>RustBridge (9:00AM - 12:00PM, 2:00PM - 5:00PM)</h3>
+  <ul class="yearbook">
+    {% for org in page.extra.rustbridge %}
+      <li>
+        <img srcset="{{ resize_image(path=org[1], width=200, height=200, quality=80, op="fill") }} 1x 
+                     {{ resize_image(path=org[1], width=400, height=400, quality=80, op="fill") }} 2x"
+             src="{{ resize_image(path=org[1], width=400, height=400, quality=80, op="fill") }}"
+             alt="Avatar for RustBridge presenter {{ org[0] }}"
+             class="portrait">
+        <h3>{{ org[0] }}</h3>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
 <h2>Saturday</h2>
 <div class="paper">
