@@ -1,0 +1,27 @@
+variables:
+  ZOLA_VERSION: 0.5.1
+  DEPLOY_URL: https://www.cogoldrust.com
+
+stages:
+  - test
+  - deploy
+
+test:
+  stage: test
+  image: node:latest
+  except:
+    - master
+  script:
+    - bash scripts/setup.sh
+    - bash scripts/build.sh
+    - npm run deploy
+
+deploy:
+  stage: deploy
+  image: node:latest
+  only:
+    - master
+  script:
+    - bash scripts/setup.sh
+    - bash scripts/build.sh
+    - npm run deploy -- --prod
