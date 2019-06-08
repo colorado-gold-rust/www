@@ -12,10 +12,12 @@ before_script:
 jobs:
   include:
     - stage: test
+      if: branch != master
       script:
         - bash scripts/build.sh
         - npm run deploy
     - stage: deploy
+      if: branch = master
       script:
         - bash scripts/build.sh
         - npm run deploy -- --prod
