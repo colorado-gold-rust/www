@@ -21,7 +21,8 @@
              src="{{ resize_image(path=org[1], width=400, height=400, quality=80, op="fill") }}"
              alt="Avatar for conference presenter {{ org[0] }}"
              class="portrait">
-        <h4>{{ org[0] }} - {{ org[2] }}</h4>
+        <h4>{{ org[0] }}</h4>
+        {{ org[2] | markdown }}
       </li>
     {% endfor %}
   </ul>
@@ -35,7 +36,8 @@
              src="{{ resize_image(path=org[1], width=400, height=400, quality=80, op="fill") }}"
              alt="Avatar for conference presenter {{ org[0] }}"
              class="portrait">
-        <h4>{{ org[0] }} - {{ org[2] }}</h4>
+        <h4>{{ org[0] }}</h4>
+        {{ org[2] | markdown }}
       </li>
     {% endfor %}
   </ul>

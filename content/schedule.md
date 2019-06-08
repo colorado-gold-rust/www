@@ -9,7 +9,7 @@ rustbridge = [
 
 [extra.workshops]
 am = [
-  ["Eliza Weisman", "avatars/e-weisman.jpg", "Getting Started with Tokio"],
+  ["Eliza Weisman", "avatars/e-weisman.jpg", "Getting `Async::Ready`: Working with Tokio"],
   ["Sunjay Varma", "avatars/s-varma.jpg", "Learn Game Development in Rust"],
 ]
 pm = [
