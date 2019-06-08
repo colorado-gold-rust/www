@@ -1,7 +1,6 @@
 # Colorado Gold Rust
 
-[![CI
-Status](https://api.travis-ci.org/colorado-gold-rust/www.svg?branch=master)](https://travis-ci.org/colorado-gold-rust/www)
+[![GitLab CI Pipeline Status](https://gitlab.com/cogoldrust/www/badges/master/pipeline.svg)](https://gitlab.com/cogoldrust/www/commits/master)
 
 Rowdy Rust in the Wild West.
 
