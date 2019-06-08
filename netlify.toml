@@ -4,3 +4,7 @@ command = "bash scripts/netlify.sh"
 
 [build.environment]
 ZOLA_VERSION = "0.5.1"
+
+[context.deploy-preview]
+environment = { ZOLA_ENV = "staging" }
+command = "BASE_URL=$DEPLOY_PRIME_URL bash scripts/netlify.sh"
