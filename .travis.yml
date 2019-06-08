@@ -9,8 +9,19 @@ env:
 before_script:
   - bash scripts/setup.sh
 
-script:
-  - bash scripts/build.sh
+jobs:
+  include:
+    - stage: test
+      script:
+        - bash scripts/build.sh
+        - npm run deploy
+    - stage: deploy
+      script:
+        - bash scripts/build.sh
+        - npm run deploy -- --prod
 
-after_success:
-  - bash scripts/deploy.sh
+stages:
+  - name: test
+    if: NOT branch = master
+  - name: deploy
+    if: branch = master
