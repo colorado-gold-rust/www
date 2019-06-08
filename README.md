@@ -1,14 +1,13 @@
 # Colorado Gold Rust
 
-[![CI
-Status](https://api.travis-ci.org/colorado-gold-rust/www.svg?branch=master)](https://travis-ci.org/colorado-gold-rust/www)
+[![GitLab CI Pipeline Status](https://gitlab.com/cogoldrust/www/badges/master/pipeline.svg)](https://gitlab.com/cogoldrust/www/commits/master)
 
 Rowdy Rust in the Wild West.
 
 ## Building the Site
 
 [COGoldRust.com](https://cogoldrust.com) is built with
-[Zola](https://getzola.org) and hosted on GitHub Pages. You'll need to
+[Zola](https://getzola.org) and hosted on [Netlify](https://www.netlify.com). You'll need to
 [install
 Zola](https://www.getzola.org/documentation/getting-started/installation/)
 before attempting to build the site on your machine.
