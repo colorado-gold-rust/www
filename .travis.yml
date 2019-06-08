@@ -22,6 +22,6 @@ jobs:
 
 stages:
   - name: test
-    if: NOT branch = master
+    if: branch != master
   - name: deploy
     if: branch = master
