@@ -4,6 +4,7 @@ template = "schedule.html"
 
 [extra]
 rustbridge = [
+  ["Omar S. Navarro Leija", "avatars/o-leija.jpg"],
   ["Kenny Foner", "avatars/k-foner.jpg"],
 ]
 
