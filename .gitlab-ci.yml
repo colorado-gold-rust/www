@@ -1,5 +1,5 @@
 variables:
-  ZOLA_VERSION: 0.5.1
+  ZOLA_VERSION: 0.8.0
   DEPLOY_URL: https://www.cogoldrust.com
 
 stages:
