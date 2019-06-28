@@ -1,0 +1,31 @@
+[[workshops]]
+name = "Eliza Weisman"
+avatar = "avatars/e-weisman.jpg"
+title = "Getting `Async::Ready`: Working with Tokio"
+slot = "am"
+
+[[workshops]]
+name = "Sunjay Varma"
+avatar = "avatars/s-varma.jpg"
+title = "Learn Game Development in Rust"
+slot = "am"
+
+[[workshops]]
+name = "Katharina Fey"
+avatar = "avatars/k-fey.jpg"
+title = "Scratch Your Own Itch: Building Developer Tools in Rust"
+slot = "pm"
+
+[[workshops]]
+name = "Sean Griffin"
+avatar = "avatars/s-griffin.jpg"
+title = "Shift Your Data Into Gear: Working with Diesel"
+slot = "pm"
+
+[[rustbridge]]
+name = "Omar S. Navarro Leija"
+avatar = "avatars/o-leija.jpg"
+
+[[rustbridge]]
+name = "Kenny Foner"
+avatar = "avatars/k-foner.jpg"
