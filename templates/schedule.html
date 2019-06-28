@@ -10,12 +10,12 @@
 
 {% block content %}
 <h2>Friday</h2>
-{% set schedule = load_data(path="speakers.toml") %}
+{% set speakers = load_data(path="speakers.toml") %}
 <div class="paper">
   <h3>Workshops</h3>
   <h3>9:00AM - 12:00PM</h3>
   <ul class="yearbook">
-    {% for presenter in schedule.workshops | filter(attribute="slot", value="am") %}
+    {% for presenter in speakers.workshops | filter(attribute="slot", value="am") %}
       <li>
         <img srcset="{{ resize_image(path=presenter.avatar, width=200, height=200, quality=80, op="fill") }} 1x 
                      {{ resize_image(path=presenter.avatar, width=400, height=400, quality=80, op="fill") }} 2x"
@@ -30,7 +30,7 @@
   <h3 class="small">Lunch Break (12:00PM - 2:00PM)</h3>
   <h3>2:00PM - 5:00PM</h3>
   <ul class="yearbook">
-    {% for presenter in schedule.workshops | filter(attribute="slot", value="pm") %}
+    {% for presenter in speakers.workshops | filter(attribute="slot", value="pm") %}
       <li>
         <img srcset="{{ resize_image(path=presenter.avatar, width=200, height=200, quality=80, op="fill") }} 1x 
                      {{ resize_image(path=presenter.avatar, width=400, height=400, quality=80, op="fill") }} 2x"
@@ -44,7 +44,7 @@
   </ul>
   <h3>RustBridge (9:00AM - 12:00PM, 2:00PM - 5:00PM)</h3>
   <ul class="yearbook">
-    {% for presenter in schedule.rustbridge %}
+    {% for presenter in speakers.rustbridge %}
       <li>
         <img srcset="{{ resize_image(path=presenter.avatar, width=200, height=200, quality=80, op="fill") }} 1x 
                      {{ resize_image(path=presenter.avatar, width=400, height=400, quality=80, op="fill") }} 2x"
@@ -59,33 +59,15 @@
 <h2>Saturday</h2>
 <div class="paper">
   <h3>9:00AM</h3>
-  <p>Venue opens, registration begins.</p>
-  <h3>9:30AM</h3>
-  <p>First talk begins</p>
-  <h3>10:00AM</h3>
-  <p>Second talk begins</p>
-  <h3>10:30AM</h3>
-  <p>BREAK</p>
-  <h3>11:00AM</h3>
-  <p>Third talk begins</p>
-  <h3>11:30</h3>
-  <p>Fourth talk begins</p>
-  <h3>12:00-2PM</h3>
-  <p>LUNCH</p>
-  <h3>2:00PM</h3>
-  <p>Fifth talk begins</h3>
-  <h3>2:30PM</h3>
-  <p>Sixth talk begins</h3>
-  <h3>3:00PM</h3>
-  <p>BREAK</p>
-  <h3>3:30PM</h3>
-  <p>Seventh talk begins</p>
-  <h3>4:00pm</h3>
-  <p>Eighth talk begins</p>
-  <h3>4:30pm</h3>
-  <p>Ninth talk begins</p>
-  <h3>5:00pm</h3>
-  <p>Wrap up announcements</p>
+  <p align="center">Venue opens, registration begins.</p>
+  {% set schedule = load_data(path="schedule.toml") %}
+  {% for slot in schedule.talks %}
+  <h3>{{ slot.localtime }}</h3>
+  {% if slot.name != "" and slot.title != "" %}
+  <p align="center">{{ slot.name }}: {{ slot.title }}</p>
+  {% else %}
+  <p align="center">Unscheduled</p>
+  {% endif %}
+  {% endfor %}
 </div>
-<p class="subnote">Please note the schedule may change as we approach conference dates.</p>
 {% endblock content %}
