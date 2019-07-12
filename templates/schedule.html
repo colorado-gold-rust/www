@@ -10,7 +10,7 @@
 
 {% block content %}
 <h2>Friday</h2>
-{% set speakers = load_data(path="speakers.toml") %}
+{% set speakers = load_data(path="content/speakers.toml") %}
 <div class="paper">
   <h3>Workshops</h3>
   <h3>9:00AM - 12:00PM</h3>
@@ -60,7 +60,7 @@
 <div class="paper">
   <h3>9:00AM</h3>
   <p align="center">Venue opens, registration begins.</p>
-  {% set schedule = load_data(path="schedule.toml") %}
+  {% set schedule = load_data(path="content/schedule.toml") %}
   {% for slot in schedule.talks %}
   <h3>{{ slot.localtime }}</h3>
   {% if slot.name != "" and slot.title != "" %}
