@@ -63,7 +63,9 @@
   {% set schedule = load_data(path="content/schedule.toml") %}
   {% for slot in schedule.talks %}
   <h3>{{ slot.localtime }}</h3>
-  {% if slot.name != "" and slot.title != "" %}
+  {% if slot.flag == "break" %}
+  <p align="center">Break</p>
+  {% elif slot.name != "" and slot.title != "" %}
   <p align="center">{{ slot.name }}: {{ slot.title }}</p>
   {% else %}
   <p align="center">Unscheduled</p>

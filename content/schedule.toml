@@ -5,10 +5,8 @@ flag = "keynote"
 localtime = "9:30AM"
 
 [[talks]]
-name = ""
-title = ""
-flag = "talk"
-localtime = "10:15AM"
+flag = "break"
+localtime = "10:30AM"
 
 [[talks]]
 name = ""
@@ -41,9 +39,7 @@ flag = "talk"
 localtime = "2:30PM"
 
 [[talks]]
-name = ""
-title = ""
-flag = "talk"
+flag = "break"
 localtime = "3:00PM"
 
 [[talks]]
@@ -65,7 +61,7 @@ flag = "talk"
 localtime = "4:30PM"
 
 [[talks]]
-name = ""
-title = ""
-flag = "talk"
+name = "Colorado Gold Rust"
+title = "Wrap-up"
+flag = "announcement"
 localtime = "5:00PM"
