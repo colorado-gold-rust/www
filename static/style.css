@@ -316,6 +316,7 @@ div.sponsor-section {
 div.sponsor-section img {
   min-height: 50px;
   max-width: 500px;
+  width: 100%;
 }
 
 div.sponsor-section a {
