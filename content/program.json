@@ -1,5 +1,23 @@
 [
     {
+        "title": "Opening Keynote",
+        "id": "keynote",
+        "abstract": "Internet communication has become nearly ubiquitous in our lives, most of which is happening via centralized services and infrastructure. It might even sometimes seem like there's no real alternative to staying in touch with people this way. And while maybe not relevant to everyone’s everyday life, at times of crisis relying on centralized services and infrastructure  can become dangerous. During the 2011 internet blackout in Egypt and more recently, in Hong Kong during the 2019 protests, Telegram, an encrypted messaging app, was DDoSed and resulted in activists and protestors losing their ability to organize. It was the former event that inspired the creation of an ad-hoc communication app, called \"qaul.net\"! Decentralized infrastructure and services are a reality that save lives and enable people to communicate freely, without government censorship or surveillance. In this talk we will cover some of the projects in existence and technologies in use. Finally, we will talk about the future of qaul.net, and how an aging codebase is being re-written in Rust to make it more secure, scalable, and future-proof!",
+        "format": "Talk",
+        "track": null,
+        "tags": [],
+        "id": 0,
+        "video_url": null,
+        "slides_url": null,
+        "speakers": [
+            {
+                "name": "Katharina Fey",
+                "bio": "filling in later",
+                "avatar": "avatars/k-fey.jpg"
+            }
+        ]
+    },
+    {
         "title": "Futures From the Ground Up (For Beginners, by Beginners) ",
         "id": "futures",
         "abstract": "Rust Futures are a major new addition to the language. With many moving parts and layers of abstraction: future trait, Tokio, Mio, async, await, and more. In this talk, we cut through the layers by implementing our own future from the ground up. First, by implementing the future trait for our own asynchronous IO computation, then by implementing a future runtime (executor and reactor) to run it on. Async/await syntax included!",
