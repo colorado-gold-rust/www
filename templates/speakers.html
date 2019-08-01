@@ -13,7 +13,7 @@
 <ul class="speakers">
 {% for session in program %}
   {% for speaker in session.speakers %}
-<li>
+<li class="paper">
     {% if speaker.avatar %}
         <img srcset="{{ resize_image(path=speaker.avatar, width=200, height=200, quality=80, op="fill") }} 1x 
                      {{ resize_image(path=speaker.avatar, width=400, height=400, quality=80, op="fill") }} 2x"
