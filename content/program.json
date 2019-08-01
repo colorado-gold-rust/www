@@ -29,7 +29,7 @@
         "slides_url": null,
         "speakers": [
             {
-                "name": "Omar (gatoWololo)",
+                "name": "Omar S. Navarro Leija",
                 "bio": "I am 4th year PhD student at the University Of Pennsylvania. I am interested in systems programming, operating systems, and concurrency. I spend a lot of time thinking about programming, and I am lucky enough to get to program in Rust for my research projects! I also had the privileged to teach UPenn's Rust Programming class, and will be teaching it again Fall 2019!",
                 "avatar": "avatars/o-leija.jpg"
             }
