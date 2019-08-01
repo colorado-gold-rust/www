@@ -10,7 +10,7 @@
 
 {% block content %}
 {% set program = load_data(path="content/program.json") %}
-<ul>
+<ul class="speakers">
 {% for session in program %}
   {% for speaker in session.speakers %}
 <li>
@@ -22,7 +22,7 @@
              class="portrait">
     {% endif %}
     <h3>{{ speaker.name }}</h3>
-    <p>Presenting: {{ session.title }}</p>
+    <p class="talk">Presenting: {{ session.title }}</p>
     {{ speaker.bio | markdown | safe }}
 </li>
   {% endfor %}

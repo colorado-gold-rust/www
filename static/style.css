@@ -164,6 +164,24 @@ ul.yearbook li h4 {
   margin: 1em auto;
 }
 
+ul.speakers {
+    justify-content: center;
+    margin: 0 auto;
+}
+
+ul.speakers li {
+    text-align: center;
+    padding: 1em;
+}
+
+ul.speakers li p.talk {
+    font-style: italic;
+}
+
+ul.speakers p:last-child {
+    text-align: left;
+}
+
 h3.small {
   font-size: 1.1em !important;
   border-top: #999 1px solid;
