@@ -21,7 +21,7 @@
              alt="Avatar for speaker {{ speaker.name }}"
              class="portrait">
     {% endif %}
-    <h3>{{ speaker.name }}</h3>
+    <h3 id="{{ speaker.id }}">{{ speaker.name }}</h3>
     <p class="talk">Presenting: {{ session.title }}</p>
     {{ speaker.bio | markdown | safe }}
 </li>

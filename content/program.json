@@ -11,6 +11,7 @@
         "speakers": [
             {
                 "name": "Katharina Fey",
+                "id": "k-fey",
                 "bio": "filling in later",
                 "avatar": "avatars/k-fey.jpg"
             }
@@ -28,6 +29,7 @@
         "speakers": [
             {
                 "name": "Omar S. Navarro Leija",
+                "id": "o-leija",
                 "bio": "I am 4th year PhD student at the University Of Pennsylvania. I am interested in systems programming, operating systems, and concurrency. I spend a lot of time thinking about programming, and I am lucky enough to get to program in Rust for my research projects! I also had the privileged to teach UPenn's Rust Programming class, and will be teaching it again Fall 2019!",
                 "avatar": "avatars/o-leija.jpg"
             }
@@ -45,6 +47,7 @@
         "speakers": [
             {
                 "name": "data-pup",
+                "id": "data-pup",
                 "bio": "Katie is a software engineer, an experimental musician, and a dog on the internet. She maintains `twiggy`, a code size profiler for WebAssembly. She is a Recurse Center alumna and a nocturnal troublemaker. She currently resides in New York with Pudding, an adorable tabby cat.",
                 "avatar": "avatars/data-pup.jpg"
             }
@@ -62,6 +65,7 @@
         "speakers": [
             {
                 "name": "Zack Pierce",
+                "id": "z-pierce",
                 "bio": "Zack Pierce is a Principal Software Engineer at Auxon Corporation, where he applies Rust to develop high-assurance cyber-physical systems. His long term passion for quality software grew out of prior experiences across several industries. Previously, Zack has helped build large scale data analysis pipelines at New Relic and provided technical leadership at an education innovation lab. He contributes to open-source testing tools and has built several corporate-internal test frameworks.",
                 "avatar": "avatars/z-pierce.jpg"
             }
@@ -79,6 +83,7 @@
         "speakers": [
             {
                 "name": "Alan Somers",
+                "id": "a-somers",
                 "bio": "Alan Somers has a background in embedded systems and operating systems.  He contributed many patches to ZFS, but discovered that that file system could never take advantage of SMR hard drives.  So he decided to write his own.  He is also maintainer or co-maintainer of eleven other crates, plus the Rust mock_shootout.  When not working with Rust, he frequently commits to FreeBSD, and recently rewrote its fusefs(5) driver.",
                 "avatar": "avatars/a-somers.jpg"
             }
@@ -96,6 +101,7 @@
         "speakers": [
             {
                 "name": "Cassie Jones",
+                "id": "c-jones",
                 "bio": "Cassie is a student at the University of Michigan, studying computer science.\r\nThey've been making art with formulas for 6 years, ever since they discovered Iñigo Quilez's articles. They're a voracious polyglot programmer, and have been programming in Rust since before 1.0. You can find them on twitter at @porglezomp."
             }
         ]
@@ -112,6 +118,7 @@
         "speakers": [
             {
                 "name": "Jane Lusby",
+                "id": "j-lusby",
                 "bio": "going to fill this in later",
                 "avatar": "avatars/j-lusby.jpg"
             }
@@ -129,6 +136,7 @@
         "speakers": [
             {
                 "name": "Igor Matuszewski",
+                "id": "i-matuszewski",
                 "bio": "Maintainer of the Rust Language Server (RLS), part of the Rust dev tools team, focused on (you guessed it!) IDE and dev tooling.\r\nBeing a good Rustacean, he uses the entire power of oxidation to help people fight interesting problems and not their editors.\r\nLikes \uD83D\uDC31, \u2328 and \uD83C\uDF5C."
             }
         ]
@@ -145,6 +153,7 @@
         "speakers": [
             {
                 "name": "Ilya Baryshnikov",
+                "id": "i-baryshnikov",
                 "bio": "Previously a JavaScript developer, now I use Rust and WebAssembly at work. I'm a member of Rust and WebAssembly working group and contributor to wasm-bindgen and wasm-pack crates. In my free time I play classical guitar, computer games, and enjoy different activities like roller skating.",
                 "avatar": "avatars/i-baryshnikov.jpg"
             }
