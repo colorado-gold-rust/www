@@ -14,6 +14,13 @@
 {% for session in program %}
   {% for speaker in session.speakers %}
 <li>
+    {% if speaker.avatar %}
+        <img srcset="{{ resize_image(path=speaker.avatar, width=200, height=200, quality=80, op="fill") }} 1x 
+                     {{ resize_image(path=speaker.avatar, width=400, height=400, quality=80, op="fill") }} 2x"
+             src="{{ resize_image(path=speaker.avatar, width=400, height=400, quality=80, op="fill") }}"
+             alt="Avatar for speaker {{ speaker.name }}"
+             class="portrait">
+    {% endif %}
     <h3>{{ speaker.name }}</h3>
     <p>Presenting: {{ session.title }}</p>
     {{ speaker.bio | markdown | safe }}
