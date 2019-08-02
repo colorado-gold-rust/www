@@ -85,8 +85,8 @@
 {% set speakers_page = get_page(path="speakers.md") %}
 <ul>
 {% for session in program %}
-  <li class="paper">
-    <h3 id="{{ session.id }}">{{ session.title }}</h3>
+  <li id="{{ session.id }}" class="paper">
+    <h3>{{ session.title }}</h3>
     {% for speaker in session.speakers %}
       <p>Presented by: <a href="{{ get_url(path=speakers_page.path, trailing_slash=true) }}#{{ speaker.id }}">{{ speaker.name }}</a></p>
     {% endfor %}
