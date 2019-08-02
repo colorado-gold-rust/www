@@ -88,7 +88,7 @@
   <li class="paper">
     <h3 id="{{ session.id }}">{{ session.title }}</h3>
     {% for speaker in session.speakers %}
-      <p>Presnted by: <a href="{{ get_url(path=speakers_page.path, trailing_slash=true)}}#{{ speaker.id }}">{{ speaker.name }}</a></p>
+      <p>Presnted by: <a href="{{ get_url(path=speakers_page.path, trailing_slash=true) }}#{{ speaker.id }}">{{ speaker.name }}</a></p>
     {% endfor %}
     {{ session.abstract | markdown | safe }}
   </li>
