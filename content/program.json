@@ -68,7 +68,8 @@
             {
                 "name": "Igor Matuszewski",
                 "id": "i-matuszewski",
-                "bio": "Maintainer of the Rust Language Server (RLS), part of the Rust dev tools team, focused on (you guessed it!) IDE and dev tooling. Being a good Rustacean, he uses the entire power of oxidation to help people fight interesting problems and not their editors. Likes \uD83D\uDC31, \u2328 and \uD83C\uDF5C."
+                "bio": "Maintainer of the Rust Language Server (RLS), part of the Rust dev tools team, focused on (you guessed it!) IDE and dev tooling. Being a good Rustacean, he uses the entire power of oxidation to help people fight interesting problems and not their editors. Likes \uD83D\uDC31, \u2328 and \uD83C\uDF5C.",
+                "avatar": "avatars/i-matuszewski.jpeg"
             }
         ]
     },
