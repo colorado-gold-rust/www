@@ -22,7 +22,7 @@
         "slides_url": null,
         "speakers": [
             {
-                "name": "data-pup",
+                "name": "Katie (datapup)",
                 "id": "data-pup",
                 "bio": "Katie is a software engineer, an experimental musician, and a dog on the internet. She maintains `twiggy`, a code size profiler for WebAssembly. She is a Recurse Center alumna and a nocturnal troublemaker. She currently resides in New York with Pudding, an adorable tabby cat.",
                 "avatar": "avatars/data-pup.jpg"
