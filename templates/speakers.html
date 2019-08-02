@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+
+{% block title %}
+{{ page.title }} - {{ config.title }}
+{% endblock title %}
+
+{% block pagetitle %}
+<h1>{{ page.title }}</h1>
+{% endblock pagetitle %}
+
+{% block content %}
+{% set program = load_data(path="content/program.json") %}
+{% set schedule_page = get_page(path="schedule.md") %}
+<ul class="speakers">
+{% for session in program %}
+  {% for speaker in session.speakers %}
+  <li id="{{ speaker.id }}" class="paper">
+    {% if speaker.avatar %}
+        <img srcset="{{ resize_image(path=speaker.avatar, width=200, height=200, quality=80, op="fill") }} 1x 
+                     {{ resize_image(path=speaker.avatar, width=400, height=400, quality=80, op="fill") }} 2x"
+             src="{{ resize_image(path=speaker.avatar, width=400, height=400, quality=80, op="fill") }}"
+             alt="Avatar for speaker {{ speaker.name }}"
+             class="portrait">
+    {% endif %}
+    <h3>{{ speaker.name }}</h3>
+    <p class="talk">Presenting: <a href="{{ get_url(path=schedule_page.path, trailing_slash=true) }}#{{ session.id }}">{{ session.title }}</a></p>
+    {{ speaker.bio | markdown | safe }}
+</li>
+  {% endfor %}
+{% endfor %}
+</ul>
+{% endblock content %}

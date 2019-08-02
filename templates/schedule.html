@@ -66,10 +66,32 @@
   {% if slot.flag == "break" %}
   <p align="center">Break</p>
   {% elif slot.name != "" and slot.title != "" %}
-  <p align="center">{{ slot.name }}: {{ slot.title }}</p>
+  <p align="center">
+    {% if slot.id %}
+    <a href="#{{ slot.id }}">
+    {% endif %}
+      {{ slot.name }}: {{ slot.title }}
+    {% if slot.id %}
+    </a>
+    {% endif %}
+  </p>
   {% else %}
   <p align="center">Unscheduled</p>
   {% endif %}
   {% endfor %}
 </div>
+<h2>Talks</h2>
+{% set program = load_data(path="content/program.json") %}
+{% set speakers_page = get_page(path="speakers.md") %}
+<ul>
+{% for session in program %}
+  <li id="{{ session.id }}" class="paper">
+    <h3>{{ session.title }}</h3>
+    {% for speaker in session.speakers %}
+      <p>Presented by: <a href="{{ get_url(path=speakers_page.path, trailing_slash=true) }}#{{ speaker.id }}">{{ speaker.name }}</a></p>
+    {% endfor %}
+    {{ session.abstract | markdown | safe }}
+  </li>
+{% endfor %}
+</ul>
 {% endblock content %}

@@ -116,7 +116,7 @@ div#map {
   margin-bottom: 1.5em;
 }
 
-div.paper {
+.paper {
   padding: 2em 3em;
   background: rgba(0, 0, 0, .04);
   margin-bottom: 2.5em;
@@ -162,6 +162,25 @@ ul.yearbook li {
 ul.yearbook li h4 {
   font-size: 1.3em;
   margin: 1em auto;
+}
+
+ul.speakers {
+    justify-content: center;
+    margin: 0 auto;
+}
+
+ul.speakers li {
+    text-align: center;
+    padding: 1em;
+}
+
+ul.speakers li p.talk {
+    font-style: italic;
+    text-align: center;
+}
+
+ul.speakers p:last-child {
+    text-align: left;
 }
 
 h3.small {

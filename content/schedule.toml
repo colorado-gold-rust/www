@@ -1,67 +1,86 @@
 [[talks]]
 name = "Katharina Fey"
 title = "Opening Keynote"
+id = "keynote"
 flag = "keynote"
 localtime = "9:30AM"
 
 [[talks]]
 flag = "break"
+localtime = "10:15AM"
+
+[[talks]]
+name = "Katie (datapup)"
+title = "Option and Result: Cooking a Better Cupcake"
+id = "cupcake"
+flag = "talk"
 localtime = "10:30AM"
 
 [[talks]]
-name = ""
-title = ""
+name = "Ilya Baryshnikov"
+title = "Practical tips about using DOM and JS APIs from Rust"
+id = "dom-js"
 flag = "talk"
 localtime = "11:00AM"
-
-[[talks]]
-name = ""
-title = ""
-flag = "talk"
-localtime = "11:30AM"
 
 [[talks]]
 name = "Free Time"
 title = "Lunch"
 flag = "freetime"
-localtime = "12:00PM-2:00PM"
+localtime = "11:30AM-1:30PM"
 
 [[talks]]
-name = ""
-title = ""
+name = "Cassie Jones"
+title = "Artisanal Rendering: Make Your Own Computer Art!"
+id = "rendering"
+flag = "talk"
+localtime = "1:30PM"
+
+[[talks]]
+name = "Igor Matuszewski"
+title = "Are we actually IDE yet? - A look on current Rust IDE story"
+id = "ide"
 flag = "talk"
 localtime = "2:00PM"
 
 [[talks]]
-name = ""
-title = ""
-flag = "talk"
+flag = "break"
 localtime = "2:30PM"
 
 [[talks]]
-flag = "break"
+name = "Omar S. Navarro Leija"
+title = "Futures From the Ground Up (For Beginners, by Beginners)"
+id = "futures"
+flag = "talk"
 localtime = "3:00PM"
 
 [[talks]]
-name = ""
-title = ""
+name = "Alan Somers"
+title = "BFFFS: a novel SMR-native file system written in Rust"
+id = "bfffs"
 flag = "talk"
 localtime = "3:30PM"
 
 [[talks]]
-name = ""
-title = ""
-flag = "talk"
+flag = "break"
 localtime = "4:00PM"
 
 [[talks]]
-name = ""
-title = ""
+name = "Zack Pierce"
+title = "A Tour of Empirical Verification in Rust"
+id = "verification"
 flag = "talk"
 localtime = "4:30PM"
+
+[[talks]]
+name = "Jane Lusby"
+title = "Rustaceans! We Can Help!"
+id = "we-can-help"
+flag = "talk"
+localtime = "5:00PM"
 
 [[talks]]
 name = "Colorado Gold Rust"
 title = "Wrap-up"
 flag = "announcement"
-localtime = "5:00PM"
+localtime = "5:30PM"
