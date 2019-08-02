@@ -176,6 +176,7 @@ ul.speakers li {
 
 ul.speakers li p.talk {
     font-style: italic;
+    text-align: center;
 }
 
 ul.speakers p:last-child {
