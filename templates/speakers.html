@@ -10,6 +10,7 @@
 
 {% block content %}
 {% set program = load_data(path="content/program.json") %}
+{% set schedule_page = get_page(path="schedule.md") %}
 <ul class="speakers">
 {% for session in program %}
   {% for speaker in session.speakers %}
@@ -22,7 +23,7 @@
              class="portrait">
     {% endif %}
     <h3 id="{{ speaker.id }}">{{ speaker.name }}</h3>
-    <p class="talk">Presenting: {{ session.title }}</p>
+    <p class="talk">Presenting: <a href="{{ get_url(path=schedule_page.path, trailing_slash=true) }}#{{ session.id }}">{{ session.title }}</a></p>
     {{ speaker.bio | markdown | safe }}
 </li>
   {% endfor %}
