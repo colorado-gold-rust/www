@@ -3,9 +3,6 @@
         "title": "Opening Keynote",
         "id": "keynote",
         "abstract": "Internet communication has become nearly ubiquitous in our lives, most of which is happening via centralized services and infrastructure. It might even sometimes seem like there's no real alternative to staying in touch with people this way. And while maybe not relevant to everyone’s everyday life, at times of crisis relying on centralized services and infrastructure can become dangerous. During the 2011 internet blackout in Egypt and more recently, in Hong Kong during the 2019 protests, Telegram, an encrypted messaging app, was DDoSed and resulted in activists and protestors losing their ability to organize. It was the former event that inspired the creation of an ad-hoc communication app, called \"qaul.net\"! Decentralized infrastructure and services are a reality that save lives and enable people to communicate freely, without government censorship or surveillance. In this talk we will cover some of the projects in existence and technologies in use. Finally, we will talk about the future of qaul.net, and how an aging codebase is being re-written in Rust to make it more secure, scalable, and future-proof!",
-        "format": "Talk",
-        "track": null,
-        "tags": [],
         "video_url": null,
         "slides_url": null,
         "speakers": [
@@ -21,9 +18,6 @@
         "title": "Option and Result: Cooking a Better Cupcake",
         "id": "cupcake",
         "abstract": "Idiomatic Rust code sometimes expects familiarity with various concepts and design patterns from functional languages like Haskell and OCaml. Using monads for error handling, as an example, might be a familiar process to programmers with a background in functional programming, but this can be a challenging idea to people who are self-taught, or come from other C-based languages like JavaScript.\r\n\r\nIn this talk, Datapup will help you understand what options and results _are_, and why they are useful, by helping you cook a better cupcake.",
-        "format": "Talk",
-        "track": null,
-        "tags": [],
         "video_url": null,
         "slides_url": null,
         "speakers": [
@@ -39,9 +33,6 @@
         "title": "Practical tips about using DOM and JS APIs from Rust",
         "id": "dom-js",
         "abstract": "It's possible to write a web application completely in Rust. Let's review in details how to work with DOM, subscribe for events, handle errors and so on. Though most of the web functionality is covered by `wasm-bindgen`, the provided api is still low level and sometimes may require a bit of boilerplate. Let's check how we can reduce the boilerplate and be more productive while working with `web-sys` and `js-sys` crates.",
-        "format": "Talk",
-        "track": null,
-        "tags": [],
         "video_url": null,
         "slides_url": null,
         "speakers": [
@@ -57,9 +48,6 @@
         "title": "Artisanal Rendering: Make Your Own Computer Art!",
         "id": "rendering",
         "abstract": "You don't need to learn complex graphics APIs to make cool art! Learn how to use Rust to turn a grid of pixels into geometric patterns, intricate fractals, and fantastical landscapes. This talk will show classic graphics techniques like fractals and raymarching that are easy to implement. It will also present these graphics problems as a great place to learn to improve the performance of your code using threads and SIMD. This talk is focused on fun software rendering rather than practical modern computer graphics, but that doesn't mean you won't learn something useful along the way!",
-        "format": "Talk",
-        "track": null,
-        "tags": [],
         "video_url": null,
         "slides_url": null,
         "speakers": [
@@ -74,9 +62,6 @@
         "title": "Are we actually IDE yet? - A look on current Rust IDE story",
         "id": "ide",
         "abstract": "Ever since appearing on the Rust 2017 roadmap, IDE support has been and continues to be a highly-requested feature that should boost productivity when working with Rust code. Despite landscape shifting a lot during these last 3 years, including proliferation of new tools and improved integration between tools, it feels like the Rust IDE story is not yet complete. This talk will explore the current status of the Rust Language Server (RLS) and Rust Analyzer, which is a main focus of the \"RLS 2.0\" compiler working group.",
-        "format": "Talk",
-        "track": null,
-        "tags": [],
         "video_url": null,
         "slides_url": null,
         "speakers": [
@@ -91,9 +76,6 @@
         "title": "Futures From the Ground Up (For Beginners, by Beginners) ",
         "id": "futures",
         "abstract": "Rust Futures are a major new addition to the language, with many moving parts and layers of abstraction: the Future trait itself, Tokio, Mio, `async`, `await`, and more. In this talk, we cut through the layers by implementing our own future from the ground up. First, by implementing the Future trait for our own asynchronous IO computation, then by implementing a Future runtime (executor and reactor) to run it on. `async`/`await` syntax included!",
-        "format": "Talk",
-        "track": null,
-        "tags": [],
         "video_url": null,
         "slides_url": null,
         "speakers": [
@@ -109,9 +91,6 @@
         "title": "BFFFS: a novel SMR-native file system written in Rust",
         "id": "bfffs",
         "abstract": "SMR (shingled magnetic recording) hard drives have higher densities than traditional hard drives, but impose a purely-sequential write order constraint on their users.  This is an imposing barrier to adapting existing file systems; few can use SMR hard drives.  This talk presents BFFFS, a novel file system built from scratch to be SMR-compatible.  It's a copy-on-write file system, with all the usual features like snapshots and transactional integrity.  And it's written in Rust.",
-        "format": "Talk",
-        "track": null,
-        "tags": [],
         "video_url": null,
         "slides_url": null,
         "speakers": [
@@ -127,9 +106,6 @@
         "title": "A Tour of Empirical Verification in Rust",
         "id": "verification",
         "abstract": "You've written a Rust program, but how do you know if it does the right thing?  You run it, of course!  But how much of the program do you run at a time? How do you execute it with useful inputs? How do you confirm good behavior without getting lost in the weeds of implementation details? How can you tell if your testing matters?\r\n\r\nThis talk will teach participants Rust's tools and techniques for empirical verification. We'll start with unit and integration testing options, explore snapshots and fuzzing, and end with state-of-the-art property-based and mutation testing.",
-        "format": "Talk",
-        "track": null,
-        "tags": [],
         "video_url": null,
         "slides_url": null,
         "speakers": [
@@ -145,9 +121,6 @@
         "title": "Rustaceans! We Can Help!",
         "id": "we-can-help",
         "abstract": "Are you a new rustacean trying to take your first steps into rust's open source community? Are you trying to meet people in the rust community but don't know where to start? Are you a maintainer interested in attracting new contributors? Then have I got the talk for you! Together we will explore some approaches to finding issues to work on, finding new projects, structuring your projects to help new contributors, and meeting other rust developers to become a happy and successful contributor in the rust open source community.",
-        "format": "Talk",
-        "track": null,
-        "tags": [],
         "video_url": null,
         "slides_url": null,
         "speakers": [
