@@ -10,7 +10,7 @@ flag = "break"
 localtime = "10:15AM"
 
 [[talks]]
-name = "data-pup"
+name = "Katie (datapup)"
 title = "Option and Result: Cooking a Better Cupcake"
 id = "cupcake"
 flag = "talk"
