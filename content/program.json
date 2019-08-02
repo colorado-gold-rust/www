@@ -18,24 +18,6 @@
         ]
     },
     {
-        "title": "Futures From the Ground Up (For Beginners, by Beginners) ",
-        "id": "futures",
-        "abstract": "Rust Futures are a major new addition to the language, with many moving parts and layers of abstraction: the Future trait itself, Tokio, Mio, `async`, `await`, and more. In this talk, we cut through the layers by implementing our own future from the ground up. First, by implementing the Future trait for our own asynchronous IO computation, then by implementing a Future runtime (executor and reactor) to run it on. `async`/`await` syntax included!",
-        "format": "Talk",
-        "track": null,
-        "tags": [],
-        "video_url": null,
-        "slides_url": null,
-        "speakers": [
-            {
-                "name": "Omar S. Navarro Leija",
-                "id": "o-leija",
-                "bio": "I am a 4th year PhD student at the University Of Pennsylvania. I am interested in systems programming, operating systems, and concurrency. I spend a lot of time thinking about programming, and I am lucky enough to get to program in Rust for my research projects! I also had the privilege to teach UPenn's Rust Programming class, and will be teaching it again Fall 2019!",
-                "avatar": "avatars/o-leija.jpg"
-            }
-        ]
-    },
-    {
         "title": "Option and Result: Cooking a Better Cupcake",
         "id": "cupcake",
         "abstract": "Idiomatic Rust code sometimes expects familiarity with various concepts and design patterns from functional languages like Haskell and OCaml. Using monads for error handling, as an example, might be a familiar process to programmers with a background in functional programming, but this can be a challenging idea to people who are self-taught, or come from other C-based languages like JavaScript.\r\n\r\nIn this talk, Datapup will help you understand what options and results _are_, and why they are useful, by helping you cook a better cupcake.",
@@ -54,9 +36,9 @@
         ]
     },
     {
-        "title": "A Tour of Empirical Verification in Rust",
-        "id": "verification",
-        "abstract": "You've written a Rust program, but how do you know if it does the right thing?  You run it, of course!  But how much of the program do you run at a time? How do you execute it with useful inputs? How do you confirm good behavior without getting lost in the weeds of implementation details? How can you tell if your testing matters?\r\n\r\nThis talk will teach participants Rust's tools and techniques for empirical verification. We'll start with unit and integration testing options, explore snapshots and fuzzing, and end with state-of-the-art property-based and mutation testing.",
+        "title": "Practical tips about using DOM and JS APIs from Rust",
+        "id": "dom-js",
+        "abstract": "It's possible to write a web application completely in Rust. Let's review in details how to work with DOM, subscribe for events, handle errors and so on. Though most of the web functionality is covered by `wasm-bindgen`, the provided api is still low level and sometimes may require a bit of boilerplate. Let's check how we can reduce the boilerplate and be more productive while working with `web-sys` and `js-sys` crates.",
         "format": "Talk",
         "track": null,
         "tags": [],
@@ -64,10 +46,62 @@
         "slides_url": null,
         "speakers": [
             {
-                "name": "Zack Pierce",
-                "id": "z-pierce",
-                "bio": "Zack Pierce is a Principal Software Engineer at Auxon Corporation, where he applies Rust to develop high-assurance cyber-physical systems. His long term passion for quality software grew out of prior experiences across several industries. Previously, Zack has helped build large scale data analysis pipelines at New Relic and provided technical leadership at an education innovation lab. He contributes to open-source testing tools and has built several corporate-internal test frameworks.",
-                "avatar": "avatars/z-pierce.jpg"
+                "name": "Ilya Baryshnikov",
+                "id": "i-baryshnikov",
+                "bio": "Previously a JavaScript developer, now I use Rust and WebAssembly at work. I'm a member of the Rust and WebAssembly working group and a contributor to the `wasm-bindgen` and `wasm-pack` crates. In my free time I play classical guitar, computer games, and enjoy different activities like roller skating.",
+                "avatar": "avatars/i-baryshnikov.jpg"
+            }
+        ]
+    },
+    {
+        "title": "Artisanal Rendering: Make Your Own Computer Art!",
+        "id": "rendering",
+        "abstract": "You don't need to learn complex graphics APIs to make cool art! Learn how to use Rust to turn a grid of pixels into geometric patterns, intricate fractals, and fantastical landscapes. This talk will show classic graphics techniques like fractals and raymarching that are easy to implement. It will also present these graphics problems as a great place to learn to improve the performance of your code using threads and SIMD. This talk is focused on fun software rendering rather than practical modern computer graphics, but that doesn't mean you won't learn something useful along the way!",
+        "format": "Talk",
+        "track": null,
+        "tags": [],
+        "video_url": null,
+        "slides_url": null,
+        "speakers": [
+            {
+                "name": "Cassie Jones",
+                "id": "c-jones",
+                "bio": "Cassie is a student at the University of Michigan, studying computer science. They've been making art with formulas for 6 years, ever since they discovered Iñigo Quilez's articles. They're a voracious polyglot programmer, and have been programming in Rust since before 1.0. You can find them on twitter at @porglezomp."
+            }
+        ]
+    },
+    {
+        "title": "Are we actually IDE yet? - A look on current Rust IDE story",
+        "id": "ide",
+        "abstract": "Ever since appearing on the Rust 2017 roadmap, IDE support has been and continues to be a highly-requested feature that should boost productivity when working with Rust code. Despite landscape shifting a lot during these last 3 years, including proliferation of new tools and improved integration between tools, it feels like the Rust IDE story is not yet complete. This talk will explore the current status of the Rust Language Server (RLS) and Rust Analyzer, which is a main focus of the \"RLS 2.0\" compiler working group.",
+        "format": "Talk",
+        "track": null,
+        "tags": [],
+        "video_url": null,
+        "slides_url": null,
+        "speakers": [
+            {
+                "name": "Igor Matuszewski",
+                "id": "i-matuszewski",
+                "bio": "Maintainer of the Rust Language Server (RLS), part of the Rust dev tools team, focused on (you guessed it!) IDE and dev tooling. Being a good Rustacean, he uses the entire power of oxidation to help people fight interesting problems and not their editors. Likes \uD83D\uDC31, \u2328 and \uD83C\uDF5C."
+            }
+        ]
+    },
+    {
+        "title": "Futures From the Ground Up (For Beginners, by Beginners) ",
+        "id": "futures",
+        "abstract": "Rust Futures are a major new addition to the language, with many moving parts and layers of abstraction: the Future trait itself, Tokio, Mio, `async`, `await`, and more. In this talk, we cut through the layers by implementing our own future from the ground up. First, by implementing the Future trait for our own asynchronous IO computation, then by implementing a Future runtime (executor and reactor) to run it on. `async`/`await` syntax included!",
+        "format": "Talk",
+        "track": null,
+        "tags": [],
+        "video_url": null,
+        "slides_url": null,
+        "speakers": [
+            {
+                "name": "Omar S. Navarro Leija",
+                "id": "o-leija",
+                "bio": "I am a 4th year PhD student at the University Of Pennsylvania. I am interested in systems programming, operating systems, and concurrency. I spend a lot of time thinking about programming, and I am lucky enough to get to program in Rust for my research projects! I also had the privilege to teach UPenn's Rust Programming class, and will be teaching it again Fall 2019!",
+                "avatar": "avatars/o-leija.jpg"
             }
         ]
     },
@@ -90,9 +124,9 @@
         ]
     },
     {
-        "title": "Artisanal Rendering: Make Your Own Computer Art!",
-        "id": "rendering",
-        "abstract": "You don't need to learn complex graphics APIs to make cool art! Learn how to use Rust to turn a grid of pixels into geometric patterns, intricate fractals, and fantastical landscapes. This talk will show classic graphics techniques like fractals and raymarching that are easy to implement. It will also present these graphics problems as a great place to learn to improve the performance of your code using threads and SIMD. This talk is focused on fun software rendering rather than practical modern computer graphics, but that doesn't mean you won't learn something useful along the way!",
+        "title": "A Tour of Empirical Verification in Rust",
+        "id": "verification",
+        "abstract": "You've written a Rust program, but how do you know if it does the right thing?  You run it, of course!  But how much of the program do you run at a time? How do you execute it with useful inputs? How do you confirm good behavior without getting lost in the weeds of implementation details? How can you tell if your testing matters?\r\n\r\nThis talk will teach participants Rust's tools and techniques for empirical verification. We'll start with unit and integration testing options, explore snapshots and fuzzing, and end with state-of-the-art property-based and mutation testing.",
         "format": "Talk",
         "track": null,
         "tags": [],
@@ -100,9 +134,10 @@
         "slides_url": null,
         "speakers": [
             {
-                "name": "Cassie Jones",
-                "id": "c-jones",
-                "bio": "Cassie is a student at the University of Michigan, studying computer science. They've been making art with formulas for 6 years, ever since they discovered Iñigo Quilez's articles. They're a voracious polyglot programmer, and have been programming in Rust since before 1.0. You can find them on twitter at @porglezomp."
+                "name": "Zack Pierce",
+                "id": "z-pierce",
+                "bio": "Zack Pierce is a Principal Software Engineer at Auxon Corporation, where he applies Rust to develop high-assurance cyber-physical systems. His long term passion for quality software grew out of prior experiences across several industries. Previously, Zack has helped build large scale data analysis pipelines at New Relic and provided technical leadership at an education innovation lab. He contributes to open-source testing tools and has built several corporate-internal test frameworks.",
+                "avatar": "avatars/z-pierce.jpg"
             }
         ]
     },
@@ -121,41 +156,6 @@
                 "id": "j-lusby",
                 "bio": "going to fill this in later",
                 "avatar": "avatars/j-lusby.jpg"
-            }
-        ]
-    },
-    {
-        "title": "Are we actually IDE yet? - A look on current Rust IDE story",
-        "id": "ide",
-        "abstract": "Ever since appearing on the Rust 2017 roadmap, IDE support has been and continues to be a highly-requested feature that should boost productivity when working with Rust code. Despite landscape shifting a lot during these last 3 years, including proliferation of new tools and improved integration between tools, it feels like the Rust IDE story is not yet complete. This talk will explore the current status of the Rust Language Server (RLS) and Rust Analyzer, which is a main focus of the \"RLS 2.0\" compiler working group.",
-        "format": "Talk",
-        "track": null,
-        "tags": [],
-        "video_url": null,
-        "slides_url": null,
-        "speakers": [
-            {
-                "name": "Igor Matuszewski",
-                "id": "i-matuszewski",
-                "bio": "Maintainer of the Rust Language Server (RLS), part of the Rust dev tools team, focused on (you guessed it!) IDE and dev tooling. Being a good Rustacean, he uses the entire power of oxidation to help people fight interesting problems and not their editors. Likes \uD83D\uDC31, \u2328 and \uD83C\uDF5C."
-            }
-        ]
-    },
-    {
-        "title": "Practical tips about using DOM and JS APIs from Rust",
-        "id": "dom-js",
-        "abstract": "It's possible to write a web application completely in Rust. Let's review in details how to work with DOM, subscribe for events, handle errors and so on. Though most of the web functionality is covered by `wasm-bindgen`, the provided api is still low level and sometimes may require a bit of boilerplate. Let's check how we can reduce the boilerplate and be more productive while working with `web-sys` and `js-sys` crates.",
-        "format": "Talk",
-        "track": null,
-        "tags": [],
-        "video_url": null,
-        "slides_url": null,
-        "speakers": [
-            {
-                "name": "Ilya Baryshnikov",
-                "id": "i-baryshnikov",
-                "bio": "Previously a JavaScript developer, now I use Rust and WebAssembly at work. I'm a member of the Rust and WebAssembly working group and a contributor to the `wasm-bindgen` and `wasm-pack` crates. In my free time I play classical guitar, computer games, and enjoy different activities like roller skating.",
-                "avatar": "avatars/i-baryshnikov.jpg"
             }
         ]
     }
