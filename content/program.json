@@ -128,7 +128,7 @@
             {
                 "name": "Jane Lusby",
                 "id": "j-lusby",
-                "bio": "",
+                "bio": "Jane is a C++ Systems Software Engineer currently living in San Francisco with her three cats and girlfriend. She's been using Rust since 2017 and has since become a contributor on clippy and cargo. She currently works on distributed virtualized storage and the internal developer build and test tools (written in Rust of course) at Scale Computing.",
                 "avatar": "avatars/j-lusby.jpg"
             }
         ]
