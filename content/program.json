@@ -54,7 +54,8 @@
             {
                 "name": "Cassie Jones",
                 "id": "c-jones",
-                "bio": "Cassie is a student at the University of Michigan, studying computer science. They've been making art with formulas for 6 years, ever since they discovered Iñigo Quilez's articles. They're a voracious polyglot programmer, and have been programming in Rust since before 1.0. You can find them on twitter at @porglezomp."
+                "bio": "Cassie is a student at the University of Michigan, studying computer science. They've been making art with formulas for 6 years, ever since they discovered Iñigo Quilez's articles. They're a voracious polyglot programmer, and have been programming in Rust since before 1.0. You can find them on twitter at @porglezomp.",
+                "avatar": "avatars/c-jones.jpeg"
             }
         ]
     },
