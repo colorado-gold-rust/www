@@ -3,6 +3,7 @@ title = "Sponsors"
 template = "sponsors/index.html"
 [extra.sponsors]
 silver = [
+  ["Mozilla", "logos/mozilla.svg", "https://www.mozilla.com"],
   ["SALT Lending", "logos/salt.svg", "https://www.saltlending.com"],
 ]
 prize = [
