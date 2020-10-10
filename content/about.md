@@ -4,7 +4,7 @@ template = "about.html"
 
 [extra]
 organizers = [
-  ["J Haigh", "avatars/j-haigh.jpg", "https://optimistictypes.com"],
+  ["Steven Haigh", "avatars/s-haigh.jpg", "https://optimistictypes.com"],
   ["Nicholas Young", "avatars/n-young.jpg", "https://www.secretfader.com"],
 ]
 
